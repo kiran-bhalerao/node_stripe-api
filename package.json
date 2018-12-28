@@ -1,0 +1,21 @@
+{
+  "name": "node_stripe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "start:dev": "env-cmd .env node app"
+  },
+  "author": "kiran bhalerao",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "stripe": "^6.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

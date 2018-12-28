@@ -1,0 +1,25 @@
+<section>
+  <div class="row">
+    <div class="col-md-6 text-center px-3">
+      <h1 class="display-3 py-4">
+        Harry Potter
+      </h1>
+      <p class="lead px-4">Harry Potter and the Half-Blood Prince is a 2009 fantasy film directed by David Yates and
+        distributed by Warner Bros.
+      </p>
+      <form action="/charge" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{stripePublicKey}}"
+          data-amount="2000" data-name="Harry Potter" data-description="Harry Potter and the Half-Blood Prince Book"
+          data-image="/assets/marketplace.jpg" data-locale="auto">
+          </script>
+        <script>
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-danger btn-lg">Purchase for $20</button>
+      </form>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="/assets/book.jpg" alt="book" height="500px">
+    </div>
+  </div>
+</section>
