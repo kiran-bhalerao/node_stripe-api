@@ -25,9 +25,6 @@ app.get('/', (req, res) => {
   res.render('index', { stripePublicKey: process.env.STRIPE_PUBLIC_KEY })
 })
 
-app.get('/success', (req, res) => {
-  res.render('success')
-})
 
 app.post('/charge', (req, res) => {
   const amount = 2000
